@@ -1,0 +1,91 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "nama": "Makanan"
+    },
+    {
+      "id": "2",
+      "nama": "Minuman"
+    },
+    {
+      "id": "3",
+      "nama": "Cemilan"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "kode": "K-01",
+      "nama": "Indomie Goreng Cabe Ijo",
+      "harga": 4000,
+      "is_ready": true,
+      "gambar": "https://www.indomie.com/uploads/product/indomie-mi-goreng-cabe-ijo-flavour_detail_145129182.png",
+      "category": {
+        "id": 1,
+        "nama": "Makanan"
+      }
+    },
+    {
+      "id": "2",
+      "kode": "K-02",
+      "nama": "Indomie Goreng Rendang",
+      "harga": 4000,
+      "is_ready": true,
+      "gambar": "https://www.indomie.com/uploads/product/indomie-mi-goreng-rendang-flavour_detail_114846026.png",
+      "category": {
+        "id": 1,
+        "nama": "Makanan"
+      }
+    },
+    {
+      "id": "11",
+      "kode": "K-011",
+      "nama": "Coffe Late",
+      "harga": 15000,
+      "is_ready": true,
+      "gambar": "https://i.pinimg.com/564x/1d/62/bd/1d62bd281e4347d8df87b5a4a020188b.jpg",
+      "category": {
+        "id": 2,
+        "nama": "Minuman"
+      }
+    },
+    {
+      "id": "12",
+      "kode": "K-012",
+      "nama": "Es Jeruk",
+      "harga": 7000,
+      "is_ready": true,
+      "gambar": "https://i.pinimg.com/564x/ae/bb/7b/aebb7bf82e7ed3be4174be87106dd76c.jpg",
+      "category": {
+        "id": 2,
+        "nama": "Minuman"
+      }
+    },
+    {
+      "id": "13",
+      "kode": "K-013",
+      "nama": "Es Teh",
+      "harga": 5000,
+      "is_ready": true,
+      "gambar": "https://i.pinimg.com/564x/0a/e7/3e/0ae73e9c750417147f5808f284989399.jpg",
+      "category": {
+        "id": 2,
+        "nama": "Minuman"
+      }
+    },
+    {
+      "id": "14",
+      "kode": "K-014",
+      "nama": "Teh Hangat",
+      "harga": 3000,
+      "is_ready": true,
+      "gambar": "https://i.pinimg.com/736x/9b/bb/52/9bbb524094a8453c13e5ff84007e10a7.jpg",
+      "category": {
+        "id": 2,
+        "nama": "Minuman"
+      }
+    }
+  ],
+  "keranjangs": []
+}

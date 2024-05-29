@@ -1,0 +1,4 @@
+SELECT SUM(product.price * keranjang.jumlah) AS total
+FROM keranjang
+JOIN product ON keranjang.product_id = product.id
+WHERE keranjang.user_id = 123; -- Assuming you have a user_id to filter by

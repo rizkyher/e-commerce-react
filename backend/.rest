@@ -1,0 +1,38 @@
+POST http://localhost:3005/product
+Content-Type: application/json
+
+{
+      "nama": "Teh Hangat",
+      "harga": 3000,
+      "is_ready": true,
+      "gambar": "https://i.pinimg.com/736x/9b/bb/52/9bbb524094a8453c13e5ff84007e10a7.jpg",
+      "category_id": 2
+}
+
+
+###
+
+POST  http://localhost:3005/category
+Content-Type: application/json
+
+
+   
+    {
+      "id": "3",
+      "nama": "Cemilan"
+    
+    }
+###
+
+POST http://localhost:3005/category
+Content-Type: application/json
+
+
+
+###
+####
+GET http://localhost:3005/keranjangs2
+Content-Type: application/json
+
+####
+DELETE http://localhost:3005/keranjangs2/
