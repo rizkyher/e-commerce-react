@@ -2,7 +2,7 @@ import Users from "../models/userModel.js";
 import Product_db, { categorys_db, keranjang_db } from "../models/productModel.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import { query } from "express";
+// import { query } from "express";
 import { Sequelize , QueryTypes } from "sequelize";
 import db from "../config/Database.js";
 
@@ -72,7 +72,7 @@ export const Login = async (req, res) => {
         res.json({ accessToken });
        
 } catch (error) {
-    res.status(404).json({msg: "email tidak ditemukan"});
+    res.status(404).json({msg: error.message});
 }
 }
 

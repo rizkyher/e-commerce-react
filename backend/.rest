@@ -35,4 +35,4 @@ GET http://localhost:3005/keranjangs2
 Content-Type: application/json
 
 ####
-DELETE http://localhost:3005/keranjangs2/
+DELETE http://localhost:3005/keranjang

@@ -4,6 +4,8 @@ import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 import router from "./routes/index.js";
 import cors from 'cors';
+import bodyParser from "body-parser";
+import session, { Cookie } from "express-session";
 // import Product_db, { categorys_db, keranjang_db } from "./models/productModel.js";
 // import { API2 } from "../projek/src/utilts/constans.js";
 
@@ -11,32 +13,37 @@ import cors from 'cors';
 
 dotenv.config()
 const app = express();
+// const bodyParser = bodyParser()
+// const session = session()
 
 
 
+//midlewere
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-// app.get(API2 + "/keranjangs", async (req, res) => {
-//     const sqlQuery = `
-//     SELECT
-//         products.nama,
-//         keranjangs.product_id,
-//         keranjangs.qty,
-//         keranjangs.harga,
-//         COUNT(keranjangs.product_id) AS JumlahPesanan
-//     FROM keranjangs
-//     INNER JOIN products ON keranjangs.product_id = products.id
-//     GROUP BY
-//         products.id;
-//     `;
 
-//     db.all(sqlQuery, [], (err, rows) =>{
-//         if(err){
-//             return res.status(500).json({message: err.message});
-//         }
 
-//         res.json(rows)
-//     })
-// })
+//session config
+app.use(session({
+    secret : 'secretKey',
+    resave: true,
+    saveUninitialized: true,
+    cookie: {
+        secure: false
+    }
+}))
+
+
+//mock user data
+const user = {
+    user1 : {
+        password: 'pass1'
+    }
+}
+
+
+
 
 try {
     await db.authenticate();
